@@ -18,7 +18,7 @@ class Main {
 
     System.out.println("Your car ride will take: " + travelTime(distance,speed) + " hours."); //prints return from method travelTime
     boolean hasEnoughGas = enoughGas(distance, mpg, gallonOfGas);
-    System.out.println(hasGas(hasEnoughGas));//prints return of method enoughGas
+    System.out.println(response(hasEnoughGas));//prints return of method enoughGas
   }
   //methods
 
