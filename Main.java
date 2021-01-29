@@ -1,8 +1,8 @@
-import java.util.Scanner;
+import java.util.Scanner; //imports scanner
 class Main {
   public static void main(String[] args) {
     
-    Scanner scan = new Scanner(System.in);
+    Scanner scan = new Scanner(System.in); //declares object scan
 
     System.out.println("How far is your destination? \n(insert a integer, distance should be in miles)"); //asks user how far away their desination is
     int distance = scan.nextInt(); //scans next line to get int distance
@@ -19,14 +19,17 @@ class Main {
     System.out.println("Your car ride will take: " + travelTime(distance,speed) + " hours."); //prints return from method travelTime
     System.out.println("Do you have enough gas for the trip: " + enoughGas(distance, mpg, gallonOfGas));//prints return of method enoughGas
   }
+  //methods
+
   static int travelTime(int distance, int speed)
   {
-    return distance/speed;
+    return distance/speed; //returns distance divided by speed to get time of the trip
   }
+  
   static boolean enoughGas(int distance, int mpg, int gasInTank)
   {
     boolean enoughInTank;
-    if(distance/mpg <= gasInTank)
+    if(distance/mpg <= gasInTank) //calculates the gas that would be used
     {
       enoughInTank = true;
       return enoughInTank;
@@ -35,6 +38,18 @@ class Main {
     {
       enoughInTank = false;
       return enoughInTank;
+    }
+  }
+  static String response(boolean hasGas)
+  {
+    if(hasgas)
+    {
+      String response = "You have enough gas, enjoy your ride!"
+    return response;
+    }
+    else
+    {
+      String response = "You don't have enough gas, you might need to fill up for more on the way.";
     }
   }
 }
