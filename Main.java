@@ -17,7 +17,8 @@ class Main {
     int gallonOfGas = scan.nextInt();
 
     System.out.println("Your car ride will take: " + travelTime(distance,speed) + " hours."); //prints return from method travelTime
-    System.out.println("Do you have enough gas for the trip: " + enoughGas(distance, mpg, gallonOfGas));//prints return of method enoughGas
+    boolean hasEnoughGas = enoughGas(distance, mpg, gallonOfGas);
+    System.out.println(hasGas(hasEnoughGas));//prints return of method enoughGas
   }
   //methods
 
@@ -42,14 +43,15 @@ class Main {
   }
   static String response(boolean hasGas)
   {
-    if(hasgas)
+    if(hasGas)
     {
-      String response = "You have enough gas, enjoy your ride!"
+      String response = "You have enough gas, enjoy your ride!";
     return response;
     }
     else
     {
       String response = "You don't have enough gas, you might need to fill up for more on the way.";
+      return response;
     }
   }
 }
