@@ -7,17 +7,17 @@ class Main {
     System.out.println("How far is your destination? \n(insert a integer, distance should be in miles)"); //asks user how far away their desination is
     int distance = scan.nextInt(); //scans next line to get int distance
 
-    System.out.println("What would be your average speed? \n(input an integer, mph)");
-    int speed = scan.nextInt();
+    System.out.println("What would be your average speed? \n(input an integer, mph)"); //asks user for their avg speed
+    int speed = scan.nextInt(); //scans for int to be int speed
 
-    System.out.println("What is your car's miles per gallon (Input an integer))");
-    int mpg = scan.nextInt();
+    System.out.println("What is your car's miles per gallon (Input an integer))"); //asks for cars int mpg 
+    int mpg = scan.nextInt();//scans for next in to be MPG
 
     System.out.println("How much gas do you have? (Input an integer, unit of measurement is gallons)");
     int gallonOfGas = scan.nextInt();
 
-    System.out.println("Your car ride will take: " + travelTime(distance,speed) + " hours.");
-    System.out.println("Do you have enough gas for the trip: " + enoughGas(distance, mpg, gallonOfGas));
+    System.out.println("Your car ride will take: " + travelTime(distance,speed) + " hours."); //prints return from method travelTime
+    System.out.println("Do you have enough gas for the trip: " + enoughGas(distance, mpg, gallonOfGas));//prints return of method enoughGas
   }
   static int travelTime(int distance, int speed)
   {
