@@ -38,7 +38,7 @@ class Main {
     else //if there is not enough gas
     {
       enoughInTank = false;
-      return enoughInTank;
+      return enoughInTank; //returns the boolean (True/False)
     }
   }
   static String response(boolean hasGas)
