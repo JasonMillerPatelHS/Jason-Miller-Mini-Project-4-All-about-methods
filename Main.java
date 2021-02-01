@@ -35,7 +35,7 @@ class Main {
       enoughInTank = true;
       return enoughInTank;
     }
-    else
+    else //if there is not enough gas
     {
       enoughInTank = false;
       return enoughInTank;
@@ -43,12 +43,12 @@ class Main {
   }
   static String response(boolean hasGas)
   {
-    if(hasGas)
+    if(hasGas) //If boolean hasGas is true do this:
     {
       String response = "You have enough gas, enjoy your ride!";
     return response;
     }
-    else
+    else // if boolean hasGas is not true do this:
     {
       String response = "You don't have enough gas, you might need to fill up for more on the way.";
       return response;
