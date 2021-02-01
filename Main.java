@@ -4,7 +4,7 @@ class Main {
     
     Scanner scan = new Scanner(System.in); //declares object scan
 
-    System.out.println("How far is your destination? \n(insert a integer, distance should be in miles)"); //asks user how far away their desination is
+    System.out.println("How far is your destination? \n(insert an integer, distance should be in miles)"); //asks user how far away their desination is
     int distance = scan.nextInt(); //scans next line to get int distance
 
     System.out.println("What would be your average speed? \n(input an integer, mph)"); //asks user for their avg speed
@@ -22,7 +22,7 @@ class Main {
   }
   //methods
 
-  static int travelTime(int distance, int speed)
+  static double travelTime(int distance, int speed)
   {
     return distance/speed; //returns distance divided by speed to get time of the trip
   }
